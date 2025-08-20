@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Brands</title>
+</head>
+<body>
+    <h1>Brands ro‘yxati</h1>
+    <ul>
+        {% for brand in brands %}
+            <li>{{ brand.name }}</li>
+        {% empty %}
+            <li>Brand yo‘q</li>
+        {% endfor %}
+    </ul>
+    <p><a href="{% url 'home' %}">👈🏻 Orqaga</a></p>
+</body>
+</html>
